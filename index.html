@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pizza ordering system">
+    <meta name="author" content="Thomas Neos">
+    <meta name="keywords" content="Food, pizza, order, online">
+    <link rel="stylesheet" href="main.css">
+    <title>Maria's pizza</title>
+</head>
+<body>
+    <div class="main">
+        <center class="heading">
+            <h2 class="text">Maria's pizza</h2>
+            <p class="text">Welcome, here's how you can easily place your order.</p>
+        </center>
+        <center>
+            <section class="size">
+                <fieldset>
+                    <legend class="text">Select size</legend>
+                    <marquee class="text" behavior="alternate" direction="">Sizes available: 9', 12' ,16'</marquee>
+                    <input  name="size" id="size" list="data">
+                    <datalist id="data">
+                        <option class="text" value="9">9</option>
+                        <option class="text" value="12">12</option>
+                        <option class="text" value="16">16</option>
+                        
+                    </datalist>
+                    <br><br>
+                </fieldset>
+              </section>
+            
+              <section class="toppings">
+                <form action="mailto:2020001026@student.itpt.co.uk" method="POST" enctype="text/plain">
+                       
+                    <h2 class="text">Choose your topping</h2>
+                   
+                        <p>Select your toppings</p>
+                <input type="checkbox" name="topping" id="mushrooms" value="mushrooms">
+                <label for="mushrooms">Mushrooms</label>
+                <input type="checkbox" name="topping" id="peperoni" value="peperoni">
+                <label for="peperoni">Peperoni</label>
+                <input type="checkbox" name="topping" id="peppers" value="peppers">
+                <label for="peppers">Peppers</label>
+                <input type="checkbox" name="topping" id="anchovies" value="anchovies">
+                <label for="anchovies">Anchovies</label>
+                <input type="checkbox" name="topping" id="sausage" value="sausage">
+                <label for="sausage">Sausage</label>
+                <input type="checkbox" name="topping" id="pineapple" value="pineapple">
+                <label for="pineapple">Pineapple</label>
+            
+                    
+            
+                    <br><br>
+            
+                </form>
+            </section>
+            
+            <section class="details">
+                <form action="mailto:2020001026@student.itpt.co.uk" method="POST" enctype="text/plain">
+                    <label for="fullname">Enter your full name</label>
+                    <input type="text" name="fullname" id="fullname">
+                    <br><br>
+                    <label for="address1">Address line 1</label>
+                    <input type="text" name="address1" id="address1">
+                    <br><br>
+                    <label for="address2">Address line 2</label>
+                    <input type="text" name="address2" id="address2">
+                    <br><br>
+                    <label for="email">Enter your email</label>
+                    <input type="email" name="email" id="email">
+                    <br><br>
+                    <p>Any allergies we should know</p>
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="allergies" id="yes" value="yes">
+                    <label for="no">No</label>
+                    <input type="radio" name="allergies" id="no" value="no">
+                    <br><br>
+                    <label for="description">Let us know about your allergies</label><br>
+                    <textarea name="description" id="description" cols="120" rows="10"></textarea>
+                </form>
+            </section>
+            
+            <section class="payment">
+                <h2 class="text">Billing details</h2>
+                <form action="mailto:2020001026@student.itpt.co.uk" method="POST" enctype="text/plain">
+                    <label for="cardname">Card name</label>
+                    <input type="text" name="cardname" id="cardname" placeholder="Your name on card">
+                    <br><br>
+                    <label for="cardnumber">Card number</label>
+                    <input type="number" name="cardnumber" id="cardnumber" placeholder="0000 0000 0000 0000">
+                    <br><br>
+                    <label for="start">Expiry date</label>
+                    <input type="month" id="start" name="start"
+                    value="2018-05">
+                    <br><br>
+                    <label for="cvc">CVC</label>
+                    <input type="number" name="cvc" id="cvc" placeholder="000" max="3">
+                    <br><br>
+                </form>
+            
+                <button type="submit">Submit</button>
+                
+            </section>
+        </center>
+       
+  
+        
+    </div>
+    
+</body>
+</html>
